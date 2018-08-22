@@ -1,6 +1,10 @@
 def roll_call_dwarves(list)
-  list.each_index do |name, i|
-  puts "#{i + 1}, #{name}"
+  list.each_with_index do |name, index|
+  puts "#{index+1}. #{name}"
+  end
+
+  array.each_with_index do |name,index|
+    puts "#{index+1}. *#{name}"
   end
 end
 
